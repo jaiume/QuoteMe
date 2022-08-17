@@ -1,0 +1,40 @@
+@import 'variables';
+@import '~bootstrap/scss/variables';
+
+.request-form {
+  max-width: 100%;
+
+  &__form {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .form-control {
+    min-height: 44px;
+
+    &:disabled {
+      background-color: $gray-300;
+    }
+  }
+
+  img.card-img-top {
+    object-fit: cover;
+  }
+}
+
+.btn-upload {
+  & + .invalid-feedback {
+    display: block;
+  }
+}
+
+label.btn-upload {
+  + input[type="file"] {
+    display: none;
+    pointer-events: none;
+  }
+}
+
+.email-check + .valid-feedback {
+  font-size: 100%;
+}

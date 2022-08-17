@@ -1,0 +1,45 @@
+@import '~bootstrap/scss/variables';
+@import '~choices.js/src/styles/choices';
+
+.choices {
+  &.is-invalid {
+    & > .choices__inner {
+      border-color: $form-feedback-invalid-color;
+    }
+  }
+
+  &__inner {
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__inner {
+      transition: none;
+    }
+  }
+
+  &__list {
+    &--dropdown {
+      z-index: 10;
+    }
+  }
+
+  &__placeholder {
+    color: $input-placeholder-color;
+    opacity: 1;
+  }
+
+  &.is-open {
+    .choices__inner {
+      border-color: #a1cbef;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .choices__list--dropdown .choices__item--selectable {
+    padding-right: 10px;
+  }
+}

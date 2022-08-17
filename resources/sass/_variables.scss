@@ -1,0 +1,38 @@
+// Body
+$body-bg: #f8fafc;
+
+$input-bg: #eee;
+$input-disabled-bg: #aaa;
+$input-border-radius: 8px;
+$btn-border-radius: 8px;
+
+// Typography
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$choices-border-radius: 0.25rem;
+$choices-bg-color: $input-bg;
+$choices-bg-color-disabled: $input-disabled-bg;
+$choices-bg-color-dropdown: #ffffff;
+$choices-text-color: #495057;
+$choices-keyline-color: #ced4da;
+$choices-primary-color: $blue;
+$choices-disabled-color: #eaeaea;
+$choices-font-size-md: 0.9rem;
+$choices-font-size-lg: 0.9rem;
+$choices-font-size-sm: 0.9rem;
+$choices-border-radius: $input-border-radius;
+$choices-guttering: 0;

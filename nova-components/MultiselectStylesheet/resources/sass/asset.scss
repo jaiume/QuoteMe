@@ -1,0 +1,40 @@
+#nova {
+  .bg-yellow {
+    background-color: #ff9f1a;
+  }
+
+  .multiselect {
+    &__placeholder {
+      color: var(--80);
+    }
+
+    &__tags {
+      padding-left: .75rem;
+      padding-right: .75rem;
+      font-size: 100%;
+    }
+
+    &__option {
+      &--highlight {
+        background: var(--primary);
+
+        &:after {
+          background: var(--primary);
+        }
+      }
+    }
+
+    &__tag {
+      background: var(--info);
+    }
+
+    &__tag-icon:hover {
+      background: var(--info-light);
+    }
+
+    &__tag-icon:after {
+      color: var(--primary-dark);
+    }
+  }
+
+}

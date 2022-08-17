@@ -1,0 +1,30 @@
+{
+    "name": "quoteme/collapsible_sidebar",
+    "description": "A Laravel Nova asset.",
+    "version": "1.0.0",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Quoteme\\CollapsibleSidebar\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Quoteme\\CollapsibleSidebar\\CollapsibleSidebarServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

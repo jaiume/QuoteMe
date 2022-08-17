@@ -1,0 +1,30 @@
+{
+    "name": "quoteme/opengraph-field",
+    "description": "A Laravel Nova field.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "shweshi/opengraph": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Quoteme\\OpengraphField\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Quoteme\\OpengraphField\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

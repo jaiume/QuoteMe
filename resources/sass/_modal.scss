@@ -1,0 +1,68 @@
+@keyframes mmfadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes mmfadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes mmslideIn {
+  from { transform: translateY(15%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes mmslideOut {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10%); }
+}
+
+.micromodal-slide {
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+
+  &[aria-hidden="false"] {
+    .modal-backdrop {
+      animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+    }
+
+    .modal-container {
+      animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+    }
+  }
+
+  &[aria-hidden="true"] {
+    .modal-backdrop {
+      animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+    }
+
+    .modal-dialog{
+      animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+    }
+  }
+
+  .modal-dialog,
+  .modal-backdrop {
+    will-change: transform;
+  }
+}
+
+.modal {
+  display: none;
+
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, $modal-backdrop-opacity);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

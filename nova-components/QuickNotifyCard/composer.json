@@ -1,0 +1,30 @@
+{
+    "name": "quoteme/quick_notify_card",
+    "description": "A Laravel Nova card.",
+    "version": "1.0.0",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Quoteme\\QuickNotifyCard\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Quoteme\\QuickNotifyCard\\CardServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

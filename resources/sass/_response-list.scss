@@ -1,0 +1,24 @@
+.response-card {
+  border-bottom: 1px solid #eee;
+  border-left: 2px solid transparent;
+
+  &.response-card--unread {
+    border-left-color: var(--primary);
+  }
+
+  &__content {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &_from{
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    &_timestamp {
+      justify-content: flex-end;
+    }
+  }
+}

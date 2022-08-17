@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es5",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "resources/js/types",
+      "node_modules/@types"
+    ]
+  },
+  "lib": [
+    "dom",
+    "esnext"
+  ],
+  "include": [
+    "resources/js/**/*.ts",
+    "resources/js/components/**/*.vue"
+  ],
+  "exclude": [
+    "public",
+    "node_modules"
+  ]
+}

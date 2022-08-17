@@ -1,0 +1,30 @@
+{
+    "name": "quoteme/supplier-profile-tool",
+    "description": "A Laravel Nova tool.",
+    "version": "1.0.0",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Quoteme\\SupplierProfileTool\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Quoteme\\SupplierProfileTool\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
